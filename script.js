@@ -3,9 +3,12 @@ for (let i = 1; i <= 100; i++) {
     eleSquares.innerHTML += `<div class="sq">${i}</div>`;
 }
 
-let square = document.querySelector('.sq');
+let square = document.querySelectorAll('.sq');
 
-square.addEventListener('click', 
+for (let i = 0; i < square.length; i++) {
+    square[i].addEventListener('click', 
     function() {
-    square.classList.add('selected');
-});
+    square[i].classList.toggle('selected');
+
+    });
+}
