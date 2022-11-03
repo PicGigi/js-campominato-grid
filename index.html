@@ -15,11 +15,26 @@
 
 <body>
     <header>
-        <img src="Logo.png">
-        <h1>Campo Minato</h1>
+        <div class="logo">
+            <img src="Logo.png">
+            <h1>Campo Minato</h1>
+        </div>
+        <div class="selection">
+            Difficolta:
+            <select id="difficulty">
+                <option value="1">Facile</option>
+                <option value="2">Medio</option>
+                <option value="3">Difficile</option>
+            </select>
+            <button id="play">NUOVA PARTITA</button>
+        </div>
     </header>
     <div class="container">
         <div class="box"></div>
     </div>
+    <footer>
+        <span>Made with &hearts; by PicGigi</span>
+        <div>Ti piace vincere facile? <button id="show">Mostra le mine in campo</button></div>
+    </footer>
 </body>
 </html>
